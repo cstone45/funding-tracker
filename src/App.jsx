@@ -1,16 +1,7 @@
 import React from 'react';
-import FundingBarChart from './Components/FundingBarChart';
-import IndustryTrendChart from './Components/IndustryTrendChart';
-import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <h1>Funding Tracker</h1>
-      <FundingBarChart />
-      <IndustryTrendChart />
-    </div>
-  );
+function FundingBarChart() {
+  return <div>Funding Bar Chart Component</div>;
 }
 
-export default App;
+export default FundingBarChart;
