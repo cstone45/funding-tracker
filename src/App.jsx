@@ -1,6 +1,6 @@
 import React from 'react';
-import FundingBarChart from './Components/FundingBarChart';
-import IndustryTrendChart from './Components/IndustryTrendChart';
+import FundingBarChart from './FundingBarChart.jsx';
+import IndustryTrendChart from './IndustryTrendChart.jsx';
 
 function App() {
   return (
