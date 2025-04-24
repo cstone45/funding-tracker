@@ -1,6 +1,6 @@
 import React from 'react';
-import FundingBarChart from './FundingBarChart.jsx';
-import IndustryTrendChart from './IndustryTrendChart.jsx';
+import FundingBarChart from './Components/FundingBarChart';
+import IndustryTrendChart from './Components/IndustryTrendChard'; // Corrected file name
 
 function App() {
   return (

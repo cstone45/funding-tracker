@@ -4,7 +4,7 @@ import 'chart.js/auto';
 
 function IndustryTrendChart() {
   const [fundingData, setFundingData] = useState([]);
-  const [chartData, setChartData] = useState({});
+  const [chartData, setChartData] = useState(null); // Initialize as null
 
   useEffect(() => {
     // Fetch funding data
@@ -36,6 +36,10 @@ function IndustryTrendChart() {
       })
       .catch((error) => console.error('Error fetching funding data:', error));
   }, []);
+
+  if (!chartData) {
+    return <p>Loading chart...</p>; // Render a loading message while chartData is null
+  }
 
   return (
     <div>
